@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./imgs/footer__cta_img.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
+    <script src="./anim.js" defer></script>
+    <link rel="stylesheet" href="./build.css" />
+    <title>Graphic Pro | Art</title>
+  </head>
+
+  <body class="bg-stone-100 dark:bg-zinc-700 overflow-x-hidden">
+    <div class="bg-white dark:bg-zinc-900">
+      <nav
+        class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-zinc-900 sticky top-0"
+      >
+        <div
+          class="container flex flex-wrap items-center justify-between mx-auto"
+        >
+          <a href="#" class="flex items-center">
+            <svg
+              class="h-6 mr-3 md:h-8 sm:h-9 fill-slate-800 dark:fill-white"
+              width="160"
+              height="27"
+              viewBox="0 0 160 27"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.875 7.8C21.475 7.06667 20.925 6.50833 20.225 6.125C19.525 5.74167 18.7083 5.55 17.775 5.55C16.7417 5.55 15.825 5.78333 15.025 6.25C14.225 6.71667 13.6 7.38333 13.15 8.25C12.7 9.11667 12.475 10.1167 12.475 11.25C12.475 12.4167 12.7 13.4333 13.15 14.3C13.6167 15.1667 14.2583 15.8333 15.075 16.3C15.8917 16.7667 16.8417 17 17.925 17C19.2583 17 20.35 16.65 21.2 15.95C22.05 15.2333 22.6083 14.2417 22.875 12.975H16.875V10.3H26.325V13.35C26.0917 14.5667 25.5917 15.6917 24.825 16.725C24.0583 17.7583 23.0667 18.5917 21.85 19.225C20.65 19.8417 19.3 20.15 17.8 20.15C16.1167 20.15 14.5917 19.775 13.225 19.025C11.875 18.2583 10.8083 17.2 10.025 15.85C9.25833 14.5 8.875 12.9667 8.875 11.25C8.875 9.53333 9.25833 8 10.025 6.65C10.8083 5.28333 11.875 4.225 13.225 3.475C14.5917 2.70833 16.1083 2.325 17.775 2.325C19.7417 2.325 21.45 2.80833 22.9 3.775C24.35 4.725 25.35 6.06667 25.9 7.8H21.875ZM32.4145 8.3C32.8645 7.56667 33.4478 6.99167 34.1645 6.575C34.8978 6.15833 35.7311 5.95 36.6645 5.95V9.625H35.7395C34.6395 9.625 33.8061 9.88333 33.2395 10.4C32.6895 10.9167 32.4145 11.8167 32.4145 13.1V20H28.9145V6.15H32.4145V8.3ZM38.1219 13.025C38.1219 11.625 38.3969 10.3833 38.9469 9.3C39.5135 8.21667 40.2719 7.38333 41.2219 6.8C42.1885 6.21667 43.2635 5.925 44.4469 5.925C45.4802 5.925 46.3802 6.13333 47.1469 6.55C47.9302 6.96667 48.5552 7.49167 49.0219 8.125V6.15H52.5469V20H49.0219V17.975C48.5719 18.625 47.9469 19.1667 47.1469 19.6C46.3635 20.0167 45.4552 20.225 44.4219 20.225C43.2552 20.225 42.1885 19.925 41.2219 19.325C40.2719 18.725 39.5135 17.8833 38.9469 16.8C38.3969 15.7 38.1219 14.4417 38.1219 13.025ZM49.0219 13.075C49.0219 12.225 48.8552 11.5 48.5219 10.9C48.1885 10.2833 47.7385 9.81667 47.1719 9.5C46.6052 9.16667 45.9969 9 45.3469 9C44.6969 9 44.0969 9.15833 43.5469 9.475C42.9969 9.79167 42.5469 10.2583 42.1969 10.875C41.8635 11.475 41.6969 12.1917 41.6969 13.025C41.6969 13.8583 41.8635 14.5917 42.1969 15.225C42.5469 15.8417 42.9969 16.3167 43.5469 16.65C44.1135 16.9833 44.7135 17.15 45.3469 17.15C45.9969 17.15 46.6052 16.9917 47.1719 16.675C47.7385 16.3417 48.1885 15.875 48.5219 15.275C48.8552 14.6583 49.0219 13.925 49.0219 13.075ZM59.4652 8.15C59.9152 7.51667 60.5319 6.99167 61.3152 6.575C62.1152 6.14167 63.0236 5.925 64.0402 5.925C65.2236 5.925 66.2902 6.21667 67.2402 6.8C68.2069 7.38333 68.9652 8.21667 69.5152 9.3C70.0819 10.3667 70.3652 11.6083 70.3652 13.025C70.3652 14.4417 70.0819 15.7 69.5152 16.8C68.9652 17.8833 68.2069 18.725 67.2402 19.325C66.2902 19.925 65.2236 20.225 64.0402 20.225C63.0236 20.225 62.1236 20.0167 61.3402 19.6C60.5736 19.1833 59.9486 18.6583 59.4652 18.025V26.6H55.9652V6.15H59.4652V8.15ZM66.7902 13.025C66.7902 12.1917 66.6152 11.475 66.2652 10.875C65.9319 10.2583 65.4819 9.79167 64.9152 9.475C64.3652 9.15833 63.7652 9 63.1152 9C62.4819 9 61.8819 9.16667 61.3152 9.5C60.7652 9.81667 60.3152 10.2833 59.9652 10.9C59.6319 11.5167 59.4652 12.2417 59.4652 13.075C59.4652 13.9083 59.6319 14.6333 59.9652 15.25C60.3152 15.8667 60.7652 16.3417 61.3152 16.675C61.8819 16.9917 62.4819 17.15 63.1152 17.15C63.7652 17.15 64.3652 16.9833 64.9152 16.65C65.4819 16.3167 65.9319 15.8417 66.2652 15.225C66.6152 14.6083 66.7902 13.875 66.7902 13.025ZM80.7086 5.95C81.7586 5.95 82.6919 6.18333 83.5086 6.65C84.3253 7.1 84.9586 7.775 85.4086 8.675C85.8753 9.55833 86.1086 10.625 86.1086 11.875V20H82.6086V12.35C82.6086 11.25 82.3336 10.4083 81.7836 9.825C81.2336 9.225 80.4836 8.925 79.5336 8.925C78.5669 8.925 77.8003 9.225 77.2336 9.825C76.6836 10.4083 76.4086 11.25 76.4086 12.35V20H72.9086V1.5H76.4086V7.875C76.8586 7.275 77.4586 6.80833 78.2086 6.475C78.9586 6.125 79.7919 5.95 80.7086 5.95ZM91.2119 4.5C90.5952 4.5 90.0786 4.30833 89.6619 3.925C89.2619 3.525 89.0619 3.03333 89.0619 2.45C89.0619 1.86667 89.2619 1.38333 89.6619 0.999999C90.0786 0.599999 90.5952 0.399999 91.2119 0.399999C91.8286 0.399999 92.3369 0.599999 92.7369 0.999999C93.1536 1.38333 93.3619 1.86667 93.3619 2.45C93.3619 3.03333 93.1536 3.525 92.7369 3.925C92.3369 4.30833 91.8286 4.5 91.2119 4.5ZM92.9369 6.15V20H89.4369V6.15H92.9369ZM95.4949 13.075C95.4949 11.6417 95.7866 10.3917 96.3699 9.325C96.9533 8.24167 97.7616 7.40833 98.7949 6.825C99.8283 6.225 101.012 5.925 102.345 5.925C104.062 5.925 105.478 6.35833 106.595 7.225C107.728 8.075 108.487 9.275 108.87 10.825H105.095C104.895 10.225 104.553 9.75833 104.07 9.425C103.603 9.075 103.02 8.9 102.32 8.9C101.32 8.9 100.528 9.26667 99.9449 10C99.3616 10.7167 99.0699 11.7417 99.0699 13.075C99.0699 14.3917 99.3616 15.4167 99.9449 16.15C100.528 16.8667 101.32 17.225 102.32 17.225C103.737 17.225 104.662 16.5917 105.095 15.325H108.87C108.487 16.825 107.728 18.0167 106.595 18.9C105.462 19.7833 104.045 20.225 102.345 20.225C101.012 20.225 99.8283 19.9333 98.7949 19.35C97.7616 18.75 96.9533 17.9167 96.3699 16.85C95.7866 15.7667 95.4949 14.5083 95.4949 13.075ZM114.934 8.15C115.384 7.51667 116.001 6.99167 116.784 6.575C117.584 6.14167 118.492 5.925 119.509 5.925C120.692 5.925 121.759 6.21667 122.709 6.8C123.676 7.38333 124.434 8.21667 124.984 9.3C125.551 10.3667 125.834 11.6083 125.834 13.025C125.834 14.4417 125.551 15.7 124.984 16.8C124.434 17.8833 123.676 18.725 122.709 19.325C121.759 19.925 120.692 20.225 119.509 20.225C118.492 20.225 117.592 20.0167 116.809 19.6C116.042 19.1833 115.417 18.6583 114.934 18.025V26.6H111.434V6.15H114.934V8.15ZM122.259 13.025C122.259 12.1917 122.084 11.475 121.734 10.875C121.401 10.2583 120.951 9.79167 120.384 9.475C119.834 9.15833 119.234 9 118.584 9C117.951 9 117.351 9.16667 116.784 9.5C116.234 9.81667 115.784 10.2833 115.434 10.9C115.101 11.5167 114.934 12.2417 114.934 13.075C114.934 13.9083 115.101 14.6333 115.434 15.25C115.784 15.8667 116.234 16.3417 116.784 16.675C117.351 16.9917 117.951 17.15 118.584 17.15C119.234 17.15 119.834 16.9833 120.384 16.65C120.951 16.3167 121.401 15.8417 121.734 15.225C122.084 14.6083 122.259 13.875 122.259 13.025ZM131.877 8.3C132.327 7.56667 132.911 6.99167 133.627 6.575C134.361 6.15833 135.194 5.95 136.127 5.95V9.625H135.202C134.102 9.625 133.269 9.88333 132.702 10.4C132.152 10.9167 131.877 11.8167 131.877 13.1V20H128.377V6.15H131.877V8.3ZM144.635 20.225C143.301 20.225 142.101 19.9333 141.035 19.35C139.968 18.75 139.126 17.9083 138.51 16.825C137.91 15.7417 137.61 14.4917 137.61 13.075C137.61 11.6583 137.918 10.4083 138.535 9.325C139.168 8.24167 140.026 7.40833 141.11 6.825C142.193 6.225 143.401 5.925 144.735 5.925C146.068 5.925 147.276 6.225 148.36 6.825C149.443 7.40833 150.293 8.24167 150.91 9.325C151.543 10.4083 151.86 11.6583 151.86 13.075C151.86 14.4917 151.535 15.7417 150.885 16.825C150.251 17.9083 149.385 18.75 148.285 19.35C147.201 19.9333 145.985 20.225 144.635 20.225ZM144.635 17.175C145.268 17.175 145.86 17.025 146.41 16.725C146.976 16.4083 147.426 15.9417 147.76 15.325C148.093 14.7083 148.26 13.9583 148.26 13.075C148.26 11.7583 147.91 10.75 147.21 10.05C146.526 9.33333 145.685 8.975 144.685 8.975C143.685 8.975 142.843 9.33333 142.16 10.05C141.493 10.75 141.16 11.7583 141.16 13.075C141.16 14.3917 141.485 15.4083 142.135 16.125C142.801 16.825 143.635 17.175 144.635 17.175Z"
+              />
+              <rect x="151" y="14" width="5" height="2" />
+              <rect x="145" y="18" width="15" height="2" />
+              <rect y="3" width="15" height="2" />
+              <rect x="5" y="7" width="7" height="2" />
+            </svg>
+          </a>
+          <div class="flex md:order-2">
+            <button
+              type="button"
+              class="text-white bg-zinc-900 hover:bg-zinc-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2 text-center mr-3 md:mr-0 dark:bg-zinc-50 dark:hover:bg-zinc-100 dark:text-zinc-800"
+            >
+              <a href="#pricing__section">Get started</a> 
+            </button>
+            <button
+              data-collapse-toggle="navbarMobileContainer"
+              type="button"
+              class="inline-flex items-center px-2 py-1 text-sm text-gray-500 rounded-lg md:hidden focus:outline-none dark:text-gray-400"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6 fill-slate-800 dark:fill-white"
+                id="menuToggle"
+                aria-hidden="true"
+                fill="currentColor"
+                clip-rule="evenodd"
+                width="18"
+                height="12"
+                viewBox="0 0 18 12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="18" height="2" rx="1" />
+                <rect x="4" y="5" width="14" height="2" rx="1" />
+                <rect y="10" width="18" height="2" rx="1" />
+              </svg>
+              <span class="sr-only">Close main menu</span>
+              <svg
+                class="w-4 h-4 fill-slate-800 dark:fill-white hidden"
+                id="menuClose"
+                aria-hidden="true"
+                fill="currentColor"
+                clip-rule="evenodd"
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="1.41422"
+                  width="16.7336"
+                  height="2"
+                  rx="1"
+                  transform="rotate(45 1.41422 0)"
+                />
+                <rect
+                  x="0.0660706"
+                  y="11.8987"
+                  width="16.7336"
+                  height="2"
+                  rx="1"
+                  transform="rotate(-45 0.0660706 11.8987)"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbarMobileContainer"
+          >
+            <ul
+              class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-m md:font-medium md:border-0 md:bg-white dark:bg-zinc-800 md:dark:bg-transparent dark:border-zinc-800"
+              id="navContainer"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="hover:underline block py-2 pl-4 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-zinc-800 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  aria-current="Welcome Section"
+                  >Welcome</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services__section"
+                  class="hover:underline block py-2 pl-4 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-zinc-800 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#reviews__section"
+                  class="hover:underline block py-2 pl-4 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-zinc-800 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Reviews</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#pricing__section"
+                  class="hover:underline block py-2 pl-4 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-zinc-800 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Pricing</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__section md:w-9/12 mr-auto ml-auto mt-10">
+        <div class="header__grid_allDisplay" id="app__header_txt">
+          <div id="allDisplay__grid_sm">
+            <img
+              class="h-40 w-40 rounded-xl"
+              src="./imgs/gp__header_m_img.png"
+              alt="Header Image"
+              id="gridPos-1"
+            />
+            <h1
+              class="mt-6 lg:mt-6 md:mt-6 font-bold text-4xl md:text-5xl text-zinc-800 dark:text-zinc-100"
+              id="gridPos-2"
+            >
+              All your project's art needs covered - without breaking the bank
+            </h1>
+            <p
+              class="mt-6 lg:mt-6 md:mt-6 font-medium text-xl md:text-2xl text-zinc-800 dark:text-zinc-100"
+            >
+              Get high quality, professional art delivered fast for any purpose.
+            </p>
+            <button
+              class="md:w-6/12 mt-6 lg:mt-6 md:mt-6 text-white bg-zinc-900 hover:bg-zinc-800 focus:outline-none font-medium rounded-lg text-m px-5 py-2 text-center mr-3 md:mr-0 dark:bg-zinc-50 dark:hover:bg-zinc-100 dark:text-zinc-800"
+            > <a href="#pricing__section">Get your custom art now</a>  
+            </button>
+          </div>
+          <div class="allDisplay__grid_ls_display" id="app__header_img">
+          </div>
+        </div>
+      </div>
+
+      <div class="ml-5 mr-5 md:w-9/12 md:mr-auto md:ml-auto mr-auto ml-auto mt-10 md:mb-10 md:text-center" id="img__grid_1">
+        <div class="md:flex md:justify-center md:align-center">
+          <img
+            class="h-200 br__custom1"
+            src="./imgs/benefits__first_img.png"
+            alt=""
+          />
+        </div>
+        <div class="" id="description__grid_1">
+          <h1
+            class="mt-6 lg:mt-6 md:mt-6 font-bold text-2xl md:text-3xl text-zinc-800 dark:text-zinc-100"
+            id="gridPos-2"
+          >
+            Take your project to the next level with eye catching art
+          </h1>
+          <p
+            class="mt-6 lg:mt-6 md:mt-6 font-normal text-xl md:text-lg text-zinc-800 dark:text-zinc-100"
+          >
+          Fully custom made with your goals in mind, we won't rest until you're satisfied with our work. 
+          <br />
+          All our plans give you the opportunity to request adjustments so we nail your designs. 
+          </p>
+          <button
+            class="md:w-50 mt-6 lg:mt-6 md:mt-6 text-white bg-zinc-900 hover:bg-zinc-800 focus:outline-none font-medium rounded-lg text-m px-5 py-2 text-center mr-3 md:mr-0 dark:bg-zinc-50 dark:hover:bg-zinc-100 dark:text-zinc-800"
+          > <a href="#pricing__section">Level up your project
+
+          </a>
+          </button>
+        </div>
+      </div>
+
+      <section
+      class="bg-gray-100 dark:bg-zinc-800 rounded p-5 md:w-9/12 mr-auto ml-auto mt-10 flex-row justify-center align-center
+      md:flex md:gap-20 md:bg-transparent md:mb-10" id="services__section"
+    >
+      <div>
+        <div
+          class="mt-6 lg:mt-6 md:mt-6 font-bold text-4xl md:text-5xl text-zinc-800 dark:text-zinc-100"
+        >
+        <ion-icon name="images-outline"></ion-icon>
+        </div>
+        <h3
+          class="mt-6 lg:mt-6 md:mt-6 font-bold text-xl md:text-2xl text-zinc-800 dark:text-zinc-100"
+        >
+          Landscapes
+        </h3>
+        <p
+          class="mt-6 lg:mt-6 md:mt-6 font-medium text-lg md:text-lg text-zinc-800 dark:text-zinc-100"
+        >
+          Need to bring a fantasy world to life or need supporting art for your website? We can design it.
+        </p>
+      </div>
+      <div>
+        <div
+          class="mt-6 lg:mt-6 md:mt-6 font-bold text-4xl md:text-5xl text-zinc-800 dark:text-zinc-100"
+        >
+        <ion-icon name="man-outline"></ion-icon>
+        </div>
+        <h3
+          class="mt-6 lg:mt-6 md:mt-6 font-bold text-xl md:text-2xl text-zinc-800 dark:text-zinc-100"
+        >
+          Character art
+        </h3>
+        <p
+          class="mt-6 lg:mt-6 md:mt-6 font-medium text-lg md:text-lg text-zinc-800 dark:text-zinc-100"
+        >
+          We can make your characters a reality based off of your description. 
+        </p>
+      </div>
+      <div>
+        <div
+          class="mt-6 lg:mt-6 md:mt-6 font-bold text-4xl md:text-5xl text-zinc-800 dark:text-zinc-100"
+        >
+        <ion-icon name="language-outline"></ion-icon>
+        </div>
+        <h3
+          class="mt-6 lg:mt-6 md:mt-6 font-bold text-xl md:text-2xl text-zinc-800 dark:text-zinc-100"
+        >
+          Anime and Manga
+        </h3>
+        <p
+          class="mt-6 mb-0 lg:mt-6 md:mt-6 font-medium text-lg md:text-lg text-zinc-800 dark:text-zinc-100"
+        >
+          That's right, we also handle Japanese style art. All we need is your description and your vision will be
+          brought to life. 
+        </p>
+      </div>
+    </section>
+      <section
+        class="bg-gray-100 dark:bg-zinc-800 rounded p-5 md:w-9/12 mr-auto ml-auto md:mt-10 flex-row justify-center align-center
+        md:flex md:gap-20 md:bg-transparent md:mb-10" id="benefits__grid_2"
+      >
+        <div>
+          <div
+            class="lg:mt-6 md:mt-6 font-bold text-4xl md:text-5xl text-zinc-800 dark:text-zinc-100"
+          >
+            <ion-icon name="enter-outline"></ion-icon>
+          </div>
+          <h3
+            class="mt-6 lg:mt-6 md:mt-6 font-bold text-xl md:text-2xl text-zinc-800 dark:text-zinc-100"
+          >
+            Get your custom art delivered in as fast as 3 days
+          </h3>
+          <p
+            class="mt-6 lg:mt-6 md:mt-6 font-medium text-lg md:text-lg text-zinc-800 dark:text-zinc-100"
+          >
+            All our plans include fast delivery so you can achieve your goals on
+            time.
+          </p>
+        </div>
+        <div>
+          <div
+            class="mt-6 lg:mt-6 md:mt-6 font-bold text-4xl md:text-5xl text-zinc-800 dark:text-zinc-100"
+          >
+            <ion-icon name="checkmark-done-outline"></ion-icon>
+          </div>
+          <h3
+            class="mt-6 lg:mt-6 md:mt-6 font-bold text-xl md:text-2xl text-zinc-800 dark:text-zinc-100"
+          >
+            Find out if your project is achievable before you pay
+          </h3>
+          <p
+            class="mt-6 lg:mt-6 md:mt-6 font-medium text-lg md:text-lg text-zinc-800 dark:text-zinc-100"
+          >
+            If we're not able to deliver we'll let you know within 2 hours so we
+            don't waste your time.
+          </p>
+        </div>
+        <div>
+          <div
+            class="mt-6 lg:mt-6 md:mt-6 font-bold text-4xl md:text-5xl text-zinc-800 dark:text-zinc-100"
+          >
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </div>
+          <h3
+            class="mt-6 lg:mt-6 md:mt-6 font-bold text-xl md:text-2xl text-zinc-800 dark:text-zinc-100"
+          >
+            A smooth experience from start to finish
+          </h3>
+          <p
+            class="mt-6 mb-6 lg:mt-6 md:mt-6 font-medium text-lg md:text-lg text-zinc-800 dark:text-zinc-100"
+          >
+            We use Fiverr's robust infrastructure to ensure that you get the
+            best buying experience possible.
+          </p>
+        </div>
+      </section>
+
+
+      <div class="ml-5 mr-5 md:w-9/12 md:mr-auto md:ml-auto mr-auto ml-auto mt-10 md:mb-10 md:text-center">
+        <div class="md:flex md:justify-center md:align-center" id="img__grid_2">
+          <img
+            class="h-200 br__custom1"
+            src="./imgs/benefits__img.png"
+            alt=""
+          />
+        </div>
+        <div class="" id="description__grid_2">
+          <h1
+            class="mt-6 lg:mt-6 md:mt-6 font-bold text-2xl md:text-3xl text-zinc-800 dark:text-zinc-100"
+            id="gridPos-2"
+          >
+            Great art at even greater prices
+          </h1>
+          <p
+            class="mt-6 lg:mt-6 md:mt-6 font-normal text-xl md:text-lg text-zinc-800 dark:text-zinc-100"
+          >
+          Don't empty your pockets trying to get great looking art. We leverage powerful AI to make your ideas a reality.  
+          Not only does this method save you money, it also saves you time. We'll deliver 3x faster than an artist and get the work done for far cheaper. 
+          </p>
+          <button
+            class="md:w-50 mt-6 lg:mt-6 md:mt-6 text-white bg-zinc-900 hover:bg-zinc-800 focus:outline-none font-medium rounded-lg text-m px-5 py-2 text-center mr-3 md:mr-0 dark:bg-zinc-50 dark:hover:bg-zinc-100 dark:text-zinc-800"
+          > <a href="#pricing__section">Save money now</a>
+            
+          </button>
+        </div>
+      </div>
+
+      <div class="ml-5 mr-5 md:w-9/12 md:mr-auto md:ml-auto mr-auto ml-auto anim__class" id="reviews__section">
+        <div>
+          <h1
+            class="md:mt-12 mt-12 font-bold text-2xl md:text-3xl text-zinc-800 dark:text-zinc-100"
+            id="gridPos-2"
+          >
+            What some of our customers had to say
+          </h1>
+        </div>
+      </div>
+  
+      <section
+      id="reviews__grid"
+        class="bg-transparent md:flex md:justify-center md:align-center md:gap-20 p-5 md:w-9/12 md:mr-auto md:ml-auto mr-auto ml-auto flex-row justify-center align-center md:mb-20"
+      >
+        <div>
+          <div
+            class="mt-6 lg:mt-6 md:mt-6 font-bold text-4xl md:text-3xl text-zinc-800 dark:text-zinc-100"
+          >
+            <ion-icon name="person-outline"></ion-icon>
+          </div>
+          <p
+            class="mt-6 lg:mt-6 md:mt-6 font-medium text-lg text-zinc-800 dark:text-zinc-100"
+          >
+            "This is where a customer review of the product or service should go.
+            - Very clear value proposition in the hero section to grab user
+            attention immediately - Very strong call to actions Use the
+            recommended testimonial structure in web designed sharpened notepad"
+          </p>
+        </div>
+        <div>
+          <div
+            class="mt-6 lg:mt-6 md:mt-6 font-bold text-4xl md:text-3xl text-zinc-800 dark:text-zinc-100"
+          >
+            <ion-icon name="person-outline"></ion-icon>
+          </div>
+          <p
+            class="mt-6 lg:mt-6 md:mt-6 font-medium text-lg text-zinc-800 dark:text-zinc-100"
+          >
+            "This is where a customer review of the product or service should go.
+            - Very clear value proposition in the hero section to grab user
+            attention immediately - Very strong call to actions Use the
+            recommended testimonial structure in web designed sharpened notepad"
+          </p>
+        </div>
+        <div>
+          <div
+            class="mt-6 lg:mt-6 md:mt-6 font-bold text-4xl md:text-3xl text-zinc-800 dark:text-zinc-100"
+          >
+            <ion-icon name="person-outline"></ion-icon>
+          </div>
+          <p
+            class="mt-6 mb-6 lg:mt-6 md:mt-6 font-medium text-lg text-zinc-800 dark:text-zinc-100"
+          >
+            "This is where a customer review of the product or service should go.
+            - Very clear value proposition in the hero section to grab user
+            attention immediately - Very strong call to actions Use the
+            recommended testimonial structure in web designed sharpened notepad"
+          </p>
+        </div>
+      </section>
+
+      
+      <div
+      class="site__divider md:w-9/12 md:mr-auto md:ml-auto md:mt-10 bg-zinc-900 mt-5 rounded dark:bg-zinc-50"
+      id="header-divider-2 md:display-none"
+      ></div>
+      <div
+      class="site__divider md:w-9/12 md:mr-auto md:ml-auto bg-zinc-900 mt-5 w-40 rounded dark:bg-zinc-50"
+      id="header-divider-1 md:display-none"
+      ></div>
+      
+      
+
+
+    </div>
+
+    <svg
+      class="fill-white dark:fill-zinc-900 m__top"
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+    >
+      <path
+        d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+        class="shape-fill"
+      ></path>
+    </svg>
+
+    <div class="img__section" id="img-lg-sectionOne">
+      <img class="anim__sec_img rounded" id="land__sec_img_one" src="./imgs/land__sec_img1.png" alt="">
+      <img class="anim__sec_img rounded" id="land__sec_img_two" src="./imgs/land__sec_img2.png" alt="">
+      <img class="anim__sec_img rounded" id="land__sec_img_three" src="./imgs/land__sec_img3.png" alt="">
+      <img class="anim__sec_img rounded" id="land__sec_img_four" src="./imgs/land__sec_img4.png" alt="">
+      <div class="anchor__element ml-5 mr-5 md:w-6/12 mr-auto ml-auto mt-10 mb-10 p-5 bg-gray-100 dark:bg-zinc-800 rounded-lg shadow-2xl">
+        <h1
+          class="mt-0 lg:mt-6 md:mt-6 font-bold text-2xl md:text-3xl text-zinc-800 dark:text-zinc-100"
+          id="gridPos-2"
+        >
+          Need impressive landscapes? 
+        </h1>
+        <p
+          class="mt-6 lg:mt-6 md:mt-6 font-medium text-lg md:text-lg text-zinc-800 dark:text-zinc-100"
+        >
+          No matter how abstract, creative or out of the box your idea is we can handle even the most challenging of concepts
+          and still deliver breath taking designs. 
+          <br />
+          <br />
+          Make your dream world a reality. 
+        </p>
+        <button
+          class="md:w-50 mt-6 lg:mt-6 md:mt-6 md:mb-6 text-white bg-zinc-900 hover:bg-zinc-800 focus:outline-none font-medium rounded-lg text-m px-5 py-2 text-center mr-3 md:mr-0 dark:bg-zinc-50 dark:hover:bg-zinc-100 dark:text-zinc-800"
+        > <a href="https://www.fiverr.com/">See more landscapes</a>
+          
+        </button>
+      </div>
+    </div>
+
+    <div class="img__section mt-6" id="img-lg-sectionTwo">
+      <img class="anim__sec_img rounded" id="char__sec_img_one" src="./imgs/char__sec_img1.png" alt="">
+      <img class="anim__sec_img rounded" id="char__sec_img_two" src="./imgs/char__sec_img2.png" alt="">
+      <img class="anim__sec_img rounded" id="char__sec_img_three" src="./imgs/char__sec_img3.png" alt="">
+      <img class="anim__sec_img rounded" id="char__sec_img_four" src="./imgs/char__sec_img4.png" alt="">
+      <div class="anchor__element ml-5 mr-5 md:w-6/12 mr-auto ml-auto mt-10 mb-10 p-5 bg-gray-100 dark:bg-zinc-800 rounded-lg shadow-2xl">
+        <h1
+          class="mt-0 lg:mt-6 md:mt-6 font-bold text-2xl md:text-3xl text-zinc-800 dark:text-zinc-100"
+          id="gridPos-2"
+        >
+          Got a character design in mind? We'll bring them to life. 
+        </h1>
+        <p
+          class="mt-6 lg:mt-6 md:mt-6 font-medium text-lg md:text-lg text-zinc-800 dark:text-zinc-100"
+        >
+          We'll breathe life into your design. From concept art for NFTs to website art we've got your back. 
+          <br />
+          <br />
+          All our plans let you request redesigns so you can be sure you'll get what you want. 
+        </p>
+        <button
+        class="md:w-50 mt-6 lg:mt-6 md:mt-6 md:mb-6 text-white bg-zinc-900 hover:bg-zinc-800 focus:outline-none font-medium rounded-lg text-m px-5 py-2 text-center mr-3 md:mr-0 dark:bg-zinc-50 dark:hover:bg-zinc-100 dark:text-zinc-800"
+        > <a href="https://www.fiverr.com/">See some of our work</a>
+          
+        </button>
+      </div>
+    </div>
+
+    <div class="img__section mt-6" id="img-lg-sectionThree">
+      <img class="anim__sec_img rounded" id="anime__sec_img_one" src="./imgs/anime__sec_img1.png" alt="">
+      <img class="anim__sec_img rounded" id="anime__sec_img_two" src="./imgs/anime__sec_img2.png" alt="">
+      <img class="anim__sec_img rounded" id="anime__sec_img_three" src="./imgs/anime__sec_img3.png" alt="">
+      <img class="anim__sec_img rounded" id="anime__sec_img_four" src="./imgs/anime__sec_img4.png" alt="">
+      <div class="anchor__element ml-5 mr-5 md:w-6/12 mr-auto ml-auto mt-10 mb-10 p-5 bg-gray-100 dark:bg-zinc-800 rounded-lg shadow-2xl">
+        <h1
+          class="mt-0 lg:mt-6 md:mt-6 font-bold text-2xl md:text-3xl text-zinc-800 dark:text-zinc-100"
+          id="gridPos-2"
+        >
+          Need high quality anime or manga style art?  
+        </h1>
+        <p
+          class="mt-6 lg:mt-6 md:mt-6 font-medium text-lg md:text-lg text-zinc-800 dark:text-zinc-100"
+        >
+          Get what you want without draining your budget.  
+          <br />
+          <br />
+          We know how important these projects can be so we'll try our best to get as close to your vision as possible.  
+        </p>
+        <button
+        class="md:w-50 mt-6 lg:mt-6 md:mt-6 md:mb-6 text-white bg-zinc-900 hover:bg-zinc-800 focus:outline-none font-medium rounded-lg text-m px-5 py-2 text-center mr-3 md:mr-0 dark:bg-zinc-50 dark:hover:bg-zinc-100 dark:text-zinc-800"
+        > <a href="#pricing__section">Bring your character to life</a>
+          
+        </button>
+      </div>
+    </div>
+
+    <div class="mt-6 mb-6 md:w-11/12 md:ml-auto md:mr-auto md:flex md:justify-space-around md:align-center" id="pricing__section">
+
+      <div class="p-5 bg-emerald-200 ml-5 mr-5 mt-10 mb-10 rounded-xl  shadow-xl dark:opacity-75">
+        <h3 class="mt-3 mb-6 text-3xl font-bold text-emerald-500">Basic Plan</h3>
+        <p class="mt-6 mb-6 text-xl font-medium">Our cheapest plan for the clients on a budget who still want great art.</p>
+        <ul class="text-m">
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Up to 5 images</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> 1 redesign per image</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Full access to the image files</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> 2:3 and 3:2 aspect ratios</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Full commercial rights</li>
+        </ul>
+        <p class="mt-6 text-3xl text-zinc-700 font-bold ">£10.95<span class="text-sm text-gray-500 font-normal"> / under 7 day delivery</span></p>
+        <button class="md:w-50 mt-6 mb-3 lg:mt-6 md:mt-6 md:mb-6 text-white bg-emerald-400 hover:bg-emerald-400 focus:outline-none font-medium rounded-xl text-m px-5 py-2 text-center mr-3 md:mr-0">
+         <a href="https://www.fiverr.com/norshie/bring-your-portrait-to-anime-or-manga?context_referrer=logged_in_homepage&source=by_recently_viewed&ref_ctx_id=da28adcdc9cf9173540eb274c38eda5a&context=recommendation&pckg_id=1&pos=2&context_alg=recently_viewed&imp_id=250e58c6-a083-42cf-b927-021e4382f9c5">
+          Choose this plan</a>
+        </button>
+      </div>
+
+      <div class="p-5 bg-sky-200 ml-5 mr-5 mt-10 mb-10 rounded-xl shadow-xl dark:opacity-75">
+        <h3 class="mt-3 mb-6 text-3xl font-bold text-sky-500">Standard Plan</h3>
+        <p class="mt-6 mb-6 text-xl font-medium">For clients who need boosted image quality, more art and speedier delivery.</p>
+        <ul class="text-m">
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Up to 20 images</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> 3 redesigns per image</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Full access to the image files</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> 2:3 and 3:2 aspect ratios</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Full commercial rights</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Boost resolution of up to 10 images</li>
+        </ul>
+        <p class="mt-6 text-3xl text-zinc-700 font-bold ">£24.95<span class="text-sm text-gray-500 font-normal"> / under 5 day delivery</span></p>
+        <button class="md:w-50 mt-6 mb-3 lg:mt-6 md:mt-6 md:mb-6 text-white bg-sky-400 hover:bg-sky-400 focus:outline-none font-medium rounded-xl text-m px-5 py-2 text-center mr-3 md:mr-0">
+          <a href="https://www.fiverr.com/norshie/bring-your-portrait-to-anime-or-manga?context_referrer=logged_in_homepage&source=by_recently_viewed&ref_ctx_id=da28adcdc9cf9173540eb274c38eda5a&context=recommendation&pckg_id=1&pos=2&context_alg=recently_viewed&imp_id=250e58c6-a083-42cf-b927-021e4382f9c5">
+            Choose this plan
+        </a>
+        </button>
+      </div>
+
+      <div class="p-5 bg-rose-200 ml-5 mr-5 mt-10 mb-10 rounded-xl shadow-xl dark:opacity-75">
+        <h3 class="mt-3 mb-6 text-3xl font-bold text-rose-500">Premium Plan</h3>
+        <p class="mt-6 mb-6 text-xl font-medium">For clients that need assets for production level projects like websites, posters, wireframes NFT art, social media campaigns and more.</p>
+        <ul class="text-m">
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Up to 50 images</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> 5 redesigns per image</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Full access to the image files</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> 2:3 and 3:2 aspect ratios</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Full commercial rights</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Boost resolution of all images</li>
+          <li><span><ion-icon name="checkmark-outline"></ion-icon></span> Priority support </li>
+        </ul>
+        <p class="mt-6 text-3xl text-zinc-700 font-bold ">£48.95<span class="text-sm text-gray-500 font-normal"> / under 3 day delivery</span></p>
+        <button class="md:w-50 mt-6 mb-3 lg:mt-6 md:mt-6 md:mb-6 text-white bg-rose-400 hover:bg-rose-400 focus:outline-none font-medium rounded-xl text-m px-5 py-2 text-center mr-3 md:mr-0">
+          <a href="https://www.fiverr.com/norshie/bring-your-portrait-to-anime-or-manga?context_referrer=logged_in_homepage&source=by_recently_viewed&ref_ctx_id=da28adcdc9cf9173540eb274c38eda5a&context=recommendation&pckg_id=1&pos=2&context_alg=recently_viewed&imp_id=250e58c6-a083-42cf-b927-021e4382f9c5">
+            Choose this plan
+          </a>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="ml-5 mr-5 md:w-11/12 md:mr-auto md:ml-auto mr-auto ml-auto" id="faq__section">
+      <div>
+        <h1
+          class="md:mt-12 mb-6 mt-12 font-bold text-2xl md:text-3xl text-zinc-800 dark:text-zinc-100"
+          id="gridPos-2"
+        >
+          FAQs
+        </h1>
+      </div>
+    </div>
+
+    
+<div id="accordion-collapse" class="md:w-11/12 md:ml-auto md:mr-auto w-11/12 ml-auto mr-auto mb-6 bg-gray-100 dark:bg-zinc-800 rounded-xl" data-accordion="collapse">
+  <h2 id="accordion-collapse-heading-1">
+    <button type="button" id="accordion__one" class="accordion__target flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-zinc-900" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+      <span>Can I request adjustments?</span>
+      <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+    <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-zinc-700 dark:bg-zinc-900">
+      <p class="mb-2 text-gray-500 dark:text-gray-400">Of course, all our plans let you request adjustments if you're not happy with the design, we want your project to look the way you want it to.</p>
+    </div>
+  </div>
+
+  <h2 id="accordion-collapse-heading-2">
+    <button type="button" id="accordion__two" class="accordion__target flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-zinc-900" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+      <span>Do you handle other types of art other than landscapes, characters or anime?</span>
+      <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+    <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-zinc-700 dark:bg-zinc-900">
+      <p class="mb-2 text-gray-500 dark:text-gray-400">Yes, we can handle most types of designs and even create art that is inspired by a particular artist. Just make sure to contact us to ensure your idea is possible 
+        to develop.
+      </p>
+    </div>
+  </div>
+
+  <h2 id="accordion-collapse-heading-3">
+    <button type="button" id="accordion__three" class="accordion__target flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-zinc-900" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+      <span>Do I get high resolution images?</span>
+      <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+    <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-zinc-700 dark:bg-zinc-900">
+      <p class="mb-2 text-gray-500 dark:text-gray-400">We can give you both a reduced size and large size version of each image, one lower resolution (perfect for websites) and one high resolution version (perfect for posters).</p>
+    </div>
+  </div>
+
+  <h2 id="accordion-collapse-heading-3">
+    <button type="button" id="accordion__four" class="accordion__target flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-zinc-900" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+      <span>Can I get a refund if I'm not happy?</span>
+      <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+    <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-zinc-700 dark:bg-zinc-900">
+      <p class="mb-2 text-gray-500 dark:text-gray-400">Yes, we use fiverr to fulfill orders, so you'll be covered under their refund policy.</p>
+    </div>
+  </div>
+</div>
+
+
+    <div class="p-5 md:text-center bg-gray-300 dark:bg-zinc-800 ">
+      <div class="">
+        <h1 class="mt-0 lg:mt-6 md:mt-6 font-bold text-2xl md:text-3xl text-zinc-800 dark:text-zinc-100">
+          Relax, we’ll handle the the art so you can focus on your project.
+        </h1>
+        <button
+        class="md:w-50 mt-6 lg:mt-6 md:mt-6 md:mb-6 text-white bg-zinc-900 hover:bg-zinc-800 focus:outline-none font-medium rounded-lg text-m px-5 py-2 text-center mr-3 md:mr-0 dark:bg-zinc-50 dark:hover:bg-zinc-100 dark:text-zinc-800"
+        > <a href="https://fiverr.com">See more work</a>
+        </button>
+      </div>
+      <div class="footer__img_container mt-6 p-0">
+      </div>
+    </div>
+
+    <footer class="p-4 bg-gray-300 shadow-xl md:px-6 md:py-8 dark:bg-zinc-800">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="#" class="flex items-center mb-4 sm:mb-0">
+            <svg
+            class="h-6 mr-3 md:h-8 sm:h-9 fill-slate-800 dark:fill-white"
+            width="160"
+            height="27"
+            viewBox="0 0 160 27"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+              d="M21.875 7.8C21.475 7.06667 20.925 6.50833 20.225 6.125C19.525 5.74167 18.7083 5.55 17.775 5.55C16.7417 5.55 15.825 5.78333 15.025 6.25C14.225 6.71667 13.6 7.38333 13.15 8.25C12.7 9.11667 12.475 10.1167 12.475 11.25C12.475 12.4167 12.7 13.4333 13.15 14.3C13.6167 15.1667 14.2583 15.8333 15.075 16.3C15.8917 16.7667 16.8417 17 17.925 17C19.2583 17 20.35 16.65 21.2 15.95C22.05 15.2333 22.6083 14.2417 22.875 12.975H16.875V10.3H26.325V13.35C26.0917 14.5667 25.5917 15.6917 24.825 16.725C24.0583 17.7583 23.0667 18.5917 21.85 19.225C20.65 19.8417 19.3 20.15 17.8 20.15C16.1167 20.15 14.5917 19.775 13.225 19.025C11.875 18.2583 10.8083 17.2 10.025 15.85C9.25833 14.5 8.875 12.9667 8.875 11.25C8.875 9.53333 9.25833 8 10.025 6.65C10.8083 5.28333 11.875 4.225 13.225 3.475C14.5917 2.70833 16.1083 2.325 17.775 2.325C19.7417 2.325 21.45 2.80833 22.9 3.775C24.35 4.725 25.35 6.06667 25.9 7.8H21.875ZM32.4145 8.3C32.8645 7.56667 33.4478 6.99167 34.1645 6.575C34.8978 6.15833 35.7311 5.95 36.6645 5.95V9.625H35.7395C34.6395 9.625 33.8061 9.88333 33.2395 10.4C32.6895 10.9167 32.4145 11.8167 32.4145 13.1V20H28.9145V6.15H32.4145V8.3ZM38.1219 13.025C38.1219 11.625 38.3969 10.3833 38.9469 9.3C39.5135 8.21667 40.2719 7.38333 41.2219 6.8C42.1885 6.21667 43.2635 5.925 44.4469 5.925C45.4802 5.925 46.3802 6.13333 47.1469 6.55C47.9302 6.96667 48.5552 7.49167 49.0219 8.125V6.15H52.5469V20H49.0219V17.975C48.5719 18.625 47.9469 19.1667 47.1469 19.6C46.3635 20.0167 45.4552 20.225 44.4219 20.225C43.2552 20.225 42.1885 19.925 41.2219 19.325C40.2719 18.725 39.5135 17.8833 38.9469 16.8C38.3969 15.7 38.1219 14.4417 38.1219 13.025ZM49.0219 13.075C49.0219 12.225 48.8552 11.5 48.5219 10.9C48.1885 10.2833 47.7385 9.81667 47.1719 9.5C46.6052 9.16667 45.9969 9 45.3469 9C44.6969 9 44.0969 9.15833 43.5469 9.475C42.9969 9.79167 42.5469 10.2583 42.1969 10.875C41.8635 11.475 41.6969 12.1917 41.6969 13.025C41.6969 13.8583 41.8635 14.5917 42.1969 15.225C42.5469 15.8417 42.9969 16.3167 43.5469 16.65C44.1135 16.9833 44.7135 17.15 45.3469 17.15C45.9969 17.15 46.6052 16.9917 47.1719 16.675C47.7385 16.3417 48.1885 15.875 48.5219 15.275C48.8552 14.6583 49.0219 13.925 49.0219 13.075ZM59.4652 8.15C59.9152 7.51667 60.5319 6.99167 61.3152 6.575C62.1152 6.14167 63.0236 5.925 64.0402 5.925C65.2236 5.925 66.2902 6.21667 67.2402 6.8C68.2069 7.38333 68.9652 8.21667 69.5152 9.3C70.0819 10.3667 70.3652 11.6083 70.3652 13.025C70.3652 14.4417 70.0819 15.7 69.5152 16.8C68.9652 17.8833 68.2069 18.725 67.2402 19.325C66.2902 19.925 65.2236 20.225 64.0402 20.225C63.0236 20.225 62.1236 20.0167 61.3402 19.6C60.5736 19.1833 59.9486 18.6583 59.4652 18.025V26.6H55.9652V6.15H59.4652V8.15ZM66.7902 13.025C66.7902 12.1917 66.6152 11.475 66.2652 10.875C65.9319 10.2583 65.4819 9.79167 64.9152 9.475C64.3652 9.15833 63.7652 9 63.1152 9C62.4819 9 61.8819 9.16667 61.3152 9.5C60.7652 9.81667 60.3152 10.2833 59.9652 10.9C59.6319 11.5167 59.4652 12.2417 59.4652 13.075C59.4652 13.9083 59.6319 14.6333 59.9652 15.25C60.3152 15.8667 60.7652 16.3417 61.3152 16.675C61.8819 16.9917 62.4819 17.15 63.1152 17.15C63.7652 17.15 64.3652 16.9833 64.9152 16.65C65.4819 16.3167 65.9319 15.8417 66.2652 15.225C66.6152 14.6083 66.7902 13.875 66.7902 13.025ZM80.7086 5.95C81.7586 5.95 82.6919 6.18333 83.5086 6.65C84.3253 7.1 84.9586 7.775 85.4086 8.675C85.8753 9.55833 86.1086 10.625 86.1086 11.875V20H82.6086V12.35C82.6086 11.25 82.3336 10.4083 81.7836 9.825C81.2336 9.225 80.4836 8.925 79.5336 8.925C78.5669 8.925 77.8003 9.225 77.2336 9.825C76.6836 10.4083 76.4086 11.25 76.4086 12.35V20H72.9086V1.5H76.4086V7.875C76.8586 7.275 77.4586 6.80833 78.2086 6.475C78.9586 6.125 79.7919 5.95 80.7086 5.95ZM91.2119 4.5C90.5952 4.5 90.0786 4.30833 89.6619 3.925C89.2619 3.525 89.0619 3.03333 89.0619 2.45C89.0619 1.86667 89.2619 1.38333 89.6619 0.999999C90.0786 0.599999 90.5952 0.399999 91.2119 0.399999C91.8286 0.399999 92.3369 0.599999 92.7369 0.999999C93.1536 1.38333 93.3619 1.86667 93.3619 2.45C93.3619 3.03333 93.1536 3.525 92.7369 3.925C92.3369 4.30833 91.8286 4.5 91.2119 4.5ZM92.9369 6.15V20H89.4369V6.15H92.9369ZM95.4949 13.075C95.4949 11.6417 95.7866 10.3917 96.3699 9.325C96.9533 8.24167 97.7616 7.40833 98.7949 6.825C99.8283 6.225 101.012 5.925 102.345 5.925C104.062 5.925 105.478 6.35833 106.595 7.225C107.728 8.075 108.487 9.275 108.87 10.825H105.095C104.895 10.225 104.553 9.75833 104.07 9.425C103.603 9.075 103.02 8.9 102.32 8.9C101.32 8.9 100.528 9.26667 99.9449 10C99.3616 10.7167 99.0699 11.7417 99.0699 13.075C99.0699 14.3917 99.3616 15.4167 99.9449 16.15C100.528 16.8667 101.32 17.225 102.32 17.225C103.737 17.225 104.662 16.5917 105.095 15.325H108.87C108.487 16.825 107.728 18.0167 106.595 18.9C105.462 19.7833 104.045 20.225 102.345 20.225C101.012 20.225 99.8283 19.9333 98.7949 19.35C97.7616 18.75 96.9533 17.9167 96.3699 16.85C95.7866 15.7667 95.4949 14.5083 95.4949 13.075ZM114.934 8.15C115.384 7.51667 116.001 6.99167 116.784 6.575C117.584 6.14167 118.492 5.925 119.509 5.925C120.692 5.925 121.759 6.21667 122.709 6.8C123.676 7.38333 124.434 8.21667 124.984 9.3C125.551 10.3667 125.834 11.6083 125.834 13.025C125.834 14.4417 125.551 15.7 124.984 16.8C124.434 17.8833 123.676 18.725 122.709 19.325C121.759 19.925 120.692 20.225 119.509 20.225C118.492 20.225 117.592 20.0167 116.809 19.6C116.042 19.1833 115.417 18.6583 114.934 18.025V26.6H111.434V6.15H114.934V8.15ZM122.259 13.025C122.259 12.1917 122.084 11.475 121.734 10.875C121.401 10.2583 120.951 9.79167 120.384 9.475C119.834 9.15833 119.234 9 118.584 9C117.951 9 117.351 9.16667 116.784 9.5C116.234 9.81667 115.784 10.2833 115.434 10.9C115.101 11.5167 114.934 12.2417 114.934 13.075C114.934 13.9083 115.101 14.6333 115.434 15.25C115.784 15.8667 116.234 16.3417 116.784 16.675C117.351 16.9917 117.951 17.15 118.584 17.15C119.234 17.15 119.834 16.9833 120.384 16.65C120.951 16.3167 121.401 15.8417 121.734 15.225C122.084 14.6083 122.259 13.875 122.259 13.025ZM131.877 8.3C132.327 7.56667 132.911 6.99167 133.627 6.575C134.361 6.15833 135.194 5.95 136.127 5.95V9.625H135.202C134.102 9.625 133.269 9.88333 132.702 10.4C132.152 10.9167 131.877 11.8167 131.877 13.1V20H128.377V6.15H131.877V8.3ZM144.635 20.225C143.301 20.225 142.101 19.9333 141.035 19.35C139.968 18.75 139.126 17.9083 138.51 16.825C137.91 15.7417 137.61 14.4917 137.61 13.075C137.61 11.6583 137.918 10.4083 138.535 9.325C139.168 8.24167 140.026 7.40833 141.11 6.825C142.193 6.225 143.401 5.925 144.735 5.925C146.068 5.925 147.276 6.225 148.36 6.825C149.443 7.40833 150.293 8.24167 150.91 9.325C151.543 10.4083 151.86 11.6583 151.86 13.075C151.86 14.4917 151.535 15.7417 150.885 16.825C150.251 17.9083 149.385 18.75 148.285 19.35C147.201 19.9333 145.985 20.225 144.635 20.225ZM144.635 17.175C145.268 17.175 145.86 17.025 146.41 16.725C146.976 16.4083 147.426 15.9417 147.76 15.325C148.093 14.7083 148.26 13.9583 148.26 13.075C148.26 11.7583 147.91 10.75 147.21 10.05C146.526 9.33333 145.685 8.975 144.685 8.975C143.685 8.975 142.843 9.33333 142.16 10.05C141.493 10.75 141.16 11.7583 141.16 13.075C141.16 14.3917 141.485 15.4083 142.135 16.125C142.801 16.825 143.635 17.175 144.635 17.175Z"
+            />
+            <rect x="151" y="14" width="5" height="2" />
+            <rect x="145" y="18" width="15" height="2" />
+            <rect y="3" width="15" height="2" />
+            <rect x="5" y="7" width="7" height="2" />
+          </svg>  
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                  <a href="#" class="mr-4 hover:underline md:mr-6 ">Welcome</a>
+              </li>
+              <li>
+                  <a href="#reviews__section" class="mr-4 hover:underline md:mr-6">Reviews</a>
+              </li>
+              <li>
+                  <a href="#services__section" class="mr-4 hover:underline md:mr-6 ">Services</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">©<a href="#" class="hover:underline">GraphicPro</a>. All Rights Reserved.
+      </span>
+    </footer>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.getElementById("menuToggle");
+        const navbarMobileContainer = document.getElementById(
+          "navbarMobileContainer"
+        );
+        const menuClose = document.getElementById("menuClose");
+        const navItems = document.querySelectorAll("li");
+
+        let navItemClicked = false;
+
+        navItems.forEach((item) =>
+          item.addEventListener("click", () => {
+            let navItemClicked = true;
+            if (navItemClicked === true) {
+              menuCloser();
+            }
+          })
+        );
+
+        menuToggle.addEventListener("click", () => {
+          menuOpener();
+        });
+        menuClose.addEventListener("click", () => {
+          menuCloser();
+        });
+
+        const menuOpener = () => {
+          navbarMobileContainer.classList.remove("hidden");
+          menuToggle.classList.add("hidden");
+          menuClose.classList.remove("hidden");
+        };
+
+        const menuCloser = () => {
+          navbarMobileContainer.classList.add("hidden");
+          menuToggle.classList.remove("hidden");
+          menuClose.classList.add("hidden");
+        };
+
+        const accordionTarget = document.querySelectorAll(".accordion__target");
+        const accordionOne = document.getElementById("accordion-collapse-body-1");
+        const accordionTwo = document.getElementById("accordion-collapse-body-2");
+        const accordionThree = document.getElementById("accordion-collapse-body-3");
+        const accordionFour = document.getElementById("accordion-collapse-body-4");
+
+
+        accordionTarget.forEach(accordion => accordion.addEventListener("click", (e) => {
+          if (e.target.id === "accordion__one") {
+            accordionOne.classList.toggle("hidden");
+          }
+          if (e.target.id === "accordion__two") {
+            accordionTwo.classList.toggle("hidden");
+          }
+          if (e.target.id === "accordion__three") {
+            accordionThree.classList.toggle("hidden");
+          }
+          if (e.target.id === "accordion__four") {
+            accordionFour.classList.toggle("hidden");
+          }
+        }))
+      });
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
