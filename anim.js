@@ -1,9 +1,11 @@
 gsap.registerPlugin("ScrollTrigger");
 
 window.addEventListener("DOMContentLoaded", () => {
-    window.addEventListener("resize", () => {
-        location.reload();
-    })
+    if (window.innerWidth > 1024) { 
+        window.addEventListener("resize", () => {
+            location.reload();
+        })
+    }
     console.log("gsap__connected")
     gsap.from("#app__header_txt", {
         opacity: 0, 
