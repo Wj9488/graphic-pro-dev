@@ -6,7 +6,6 @@ window.addEventListener("DOMContentLoaded", () => {
             location.reload();
         })
     }
-    console.log("gsap__connected")
     gsap.from("#app__header_txt", {
         opacity: 0, 
         duration: 1,
